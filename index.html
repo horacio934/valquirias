@@ -4,47 +4,68 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Valquirias MC | Club de Motos</title>
+
+  <!-- METADATOS DE SEGURIDAD Y PROTECCIÃ“N DE DATOS -->
+  <!-- 1. Forzar conexiones seguras HTTPS (Upgrade Insecure Requests) -->
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data: https:;" />
+
+  <!-- 2. PolÃ­tica de Referrer para no filtrar informaciÃ³n sensible al navegar a enlaces externos -->
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <!-- 3. RestricciÃ³n de permisos y APIs del navegador (CÃ¡mara, MicrÃ³fono, GeolocalizaciÃ³n) -->
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+
+  <!-- 4. ProtecciÃ³n contra renderizado en frames externos (PrevenciÃ³n de Clickjacking) -->
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+
+  <!-- Hoja de estilos principal -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Encabezado y Navegación Principal -->
+  <!-- Encabezado y NavegaciÃ³n Principal -->
   <header class="header">
     <div class="container header-container">
       <div class="logo">
         <a href="#">VALQUIRIAS <span>MC</span></a>
       </div>
-      <nav class="nav">
+      
+      <!-- BotÃ³n del menÃº de hamburguesa -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menÃº de navegaciÃ³n">
+        &#9776;
+      </button>
+
+      <nav class="nav" id="nav-menu">
         <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#nosotras">Nosotras</a></li>
-          <li><a href="#rutas">Rutas</a></li>
-          <li><a href="#tienda">Tienda</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#nosotras" class="nav-link">Nosotras</a></li>
+          <li><a href="#rutas" class="nav-link">Rutas</a></li>
+          <li><a href="#tienda" class="nav-link">Tienda</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Sección Principal (Hero Banner) -->
+  <!-- SecciÃ³n Principal (Hero Banner) -->
   <section id="inicio" class="hero">
     <div class="hero-overlay"></div>
     <div class="container hero-content">
       <h1>HERMANDAD, FUERZA Y CARRETERA</h1>
-      <p>Bienvenidas al sitio oficial de Valquirias MC. Pasión por las dos ruedas y libertad sin límites.</p>
+      <p>Bienvenidas al sitio oficial de Valquirias MC. PasiÃ³n por las dos ruedas y libertad sin lÃ­mites.</p>
       <div class="hero-buttons">
-        <a href="#contacto" class="btn btn-primary">Únete al Club</a>
-        <a href="#rutas" class="btn btn-secondary">Próxima Rodada</a>
+        <a href="#contacto" class="btn btn-primary">Ãšnete al Club</a>
+        <a href="#rutas" class="btn btn-secondary">PrÃ³xima Rodada</a>
       </div>
     </div>
   </section>
 
-  <!-- Sección: Sobre Nosotras -->
+  <!-- SecciÃ³n: Sobre Nosotras -->
   <section id="nosotras" class="section dark-section">
     <div class="container">
-      <h2 class="section-title">Nuestra Filosofía</h2>
+      <h2 class="section-title">Nuestra FilosofÃ­a</h2>
       <p class="section-subtitle">
-        Valquirias MC nace de la unión de mujeres apasionadas por la cultura motera, el respeto en ruta y la lealtad.
+        Valquirias MC nace de la uniÃ³n de mujeres apasionadas por la cultura motera, el respeto en ruta y la lealtad.
       </p>
       <div class="grid-3">
         <div class="card">
@@ -53,33 +74,33 @@
         </div>
         <div class="card">
           <h3>Comunidad</h3>
-          <p>Fomentamos el apoyo mutuo, la formación técnica y eventos benéficos para la comunidad.</p>
+          <p>Fomentamos el apoyo mutuo, la formaciÃ³n tÃ©cnica y eventos benÃ©ficos para la comunidad.</p>
         </div>
         <div class="card">
           <h3>Estilo de Vida</h3>
-          <p>Orgullo de llevar los colores y compartir la pasión por el motor en cada kilómetro.</p>
+          <p>Orgullo de llevar los colores y compartir la pasiÃ³n por el motor en cada kilÃ³metro.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sección: Próxima Ruta -->
+  <!-- SecciÃ³n: PrÃ³xima Ruta -->
   <section id="rutas" class="section light-section">
     <div class="container">
-      <h2 class="section-title">Próximo Evento</h2>
+      <h2 class="section-title">PrÃ³ximo Evento</h2>
       <div class="event-banner">
         <div class="event-info">
           <h3>Ruta Traslasierra 2026</h3>
           <p><strong>Fecha:</strong> 20 de Noviembre, 2026</p>
           <p><strong>Punto de encuentro:</strong> Sede Central Valquirias - 08:00 AM</p>
-          <p>Recorrido de 350 km con paradas gastronómicas y convivencia motera.</p>
+          <p>Recorrido de 350 km con paradas gastronÃ³micas y convivencia motera.</p>
         </div>
         <a href="#contacto" class="btn btn-primary">Confirmar Asistencia</a>
       </div>
     </div>
   </section>
 
-  <!-- Pie de Página -->
+  <!-- Pie de PÃ¡gina -->
   <footer class="footer">
     <div class="container footer-container">
       <p>&copy; 2026 Valquirias Motorcycle Club. Todos los derechos reservados.</p>
@@ -90,33 +111,7 @@
     </div>
   </footer>
 
+  <!-- Script del MenÃº Desplegable -->
+  <script src="main.js"></script>
 </body>
 </html>
-
-<header class="header">
-  <div class="container header-container">
-    <div class="logo">
-      <a href="#">VALQUIRIAS <span>MC</span></a>
-    </div>
-    
-    <!-- Botón del menú de hamburguesa -->
-    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">
-      &#9776; <!-- Tres líneas del menú hamburguesa -->
-    </button>
-
-    <nav class="nav" id="nav-menu">
-      <ul>
-        <li><a href="#inicio" class="nav-link">Inicio</a></li>
-        <li><a href="#nosotras" class="nav-link">Nosotras</a></li>
-        <li><a href="#rutas" class="nav-link">Rutas</a></li>
-        <li><a href="#tienda" class="nav-link">Tienda</a></li>
-        <li><a href="#contacto" class="nav-link">Contacto</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<!-- Vincular el archivo JavaScript antes del cierre del body -->
-<script src="main.js"></script>
-
-
