@@ -29,7 +29,7 @@ body {
   margin: 0 auto;
 }
 
-/* --- ENCABEZADO Y NAVEGACIÓN --- */
+/* --- ENCABEZADO Y NAVEGACIÃ“N --- */
 .header {
   background-color: rgba(18, 18, 18, 0.95);
   position: sticky;
@@ -250,7 +250,7 @@ body {
   color: var(--color-silver);
 }
 
-/* --- DISEÑO RESPONSIVO (MÓVIL) --- */
+/* --- DISEÃ‘O RESPONSIVO (MÃ“VIL) --- */
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
@@ -270,7 +270,7 @@ body {
     text-align: center;
   }
 }
-/* --- BOTÓN HAMBURGUESA --- */
+/* --- BOTÃ“N HAMBURGUESA --- */
 .menu-toggle {
   display: none;
   background: none;
@@ -285,19 +285,19 @@ body {
   color: var(--color-accent);
 }
 
-/* --- ADAPTACIÓN RESPONSIVA PARA MÓVIL --- */
+/* --- ADAPTACIÃ“N RESPONSIVA PARA MÃ“VIL --- */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block; /* Muestra la hamburguesa solo en pantallas pequeñas */
+    display: block; /* Muestra la hamburguesa solo en pantallas pequeÃ±as */
   }
 
   .nav {
-    display: none; /* Oculta el menú por defecto */
+    display: none; /* Oculta el menÃº por defecto */
     width: 100%;
   }
 
   .nav.active {
-    display: block; /* Muestra el menú cuando JavaScript añade la clase 'active' */
+    display: block; /* Muestra el menÃº cuando JavaScript aÃ±ade la clase 'active' */
   }
 
   .nav ul {
@@ -309,14 +309,14 @@ body {
     border-top: 1px solid #333;
   }
 }
-/* Asegurar que la sección contenedora tenga posición relativa */
+/* Asegurar que la secciÃ³n contenedora tenga posiciÃ³n relativa */
 .hero {
   position: relative; /* Permite posicionar elementos absolutos dentro de ella */
 }
 
 /* --- POSICIONAMIENTO DEL QR Y EL LOGO --- */
 
-/* Código QR en la esquina superior izquierda */
+/* CÃ³digo QR en la esquina superior izquierda */
 .hero-qr-top-left {
   position: absolute;
   top: 25px;
@@ -345,17 +345,17 @@ body {
   transform: scale(1.08);
 }
 
-/* Ajuste alineado para pantallas móviles */
+/* Ajuste alineado para pantallas mÃ³viles */
 @media (max-width: 768px) {
   .hero-qr-top-left {
     top: 15px;
     left: 15px;
-    height: 20px;
+    height: 25px;
   }
 
   .hero-logo-top-right {
     top: 15px;
     right: 15px;
-    height: 20px;
+    height: 25px;
   }
 }
