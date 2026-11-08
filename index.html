@@ -3,19 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Valquirias MC | Club de Motos</title>
+  <title>Valquirias | Club de Motos</title>
 
-  <!-- METADATOS DE SEGURIDAD Y PROTECCIÓN DE DATOS -->
-  <!-- 1. Forzar conexiones seguras HTTPS (Upgrade Insecure Requests) -->
+  <!-- METADATOS DE SEGURIDAD Y PROTECCI�N DE DATOS -->
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data: https:;" />
-
-  <!-- 2. Política de Referrer para no filtrar información sensible al navegar a enlaces externos -->
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-
-  <!-- 3. Restricción de permisos y APIs del navegador (Cámara, Micrófono, Geolocalización) -->
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
-
-  <!-- 4. Protección contra renderizado en frames externos (Prevención de Clickjacking) -->
   <meta http-equiv="X-Frame-Options" content="DENY" />
 
   <!-- Hoja de estilos principal -->
@@ -23,15 +16,15 @@
 </head>
 <body>
 
-  <!-- Encabezado y Navegación Principal -->
+  <!-- Encabezado y Navegaci�n Principal -->
   <header class="header">
     <div class="container header-container">
       <div class="logo">
-        <a href="#">VALQUIRIAS <span>MC</span></a>
+        <a href="#">VALQUIRIAS <span></span></a>
       </div>
       
-      <!-- Botón del menú de hamburguesa -->
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">
+      <!-- Bot�n del men� de hamburguesa -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir men� de navegaci�n">
         &#9776;
       </button>
 
@@ -47,25 +40,32 @@
     </div>
   </header>
 
-  <!-- Sección Principal (Hero Banner) -->
+  <!-- Secci�n Principal (Hero Banner) -->
   <section id="inicio" class="hero">
     <div class="hero-overlay"></div>
+    
+    <!-- Logo en la esquina superior derecha con tama�o ajustado -->
+    <img src="images/emblema_valkirias_color.png" 
+         alt="Emblema oficial de Valquirias MC" 
+         class="hero-logo-top-right" 
+         style="width: 250px; height: auto;" />
+
     <div class="container hero-content">
       <h1>HERMANDAD, FUERZA Y CARRETERA</h1>
-      <p>Bienvenidas al sitio oficial de Valquirias MC. Pasión por las dos ruedas y libertad sin límites.</p>
+      <p>Bienvenidas al sitio oficial de Valquirias. Pasion por las dos ruedas y libertad sin limites.</p>
       <div class="hero-buttons">
-        <a href="#contacto" class="btn btn-primary">Únete al Club</a>
-        <a href="#rutas" class="btn btn-secondary">Próxima Rodada</a>
+        <a href="#contacto" class="btn btn-primary">Unete al Club</a>
+        <a href="#rutas" class="btn btn-secondary">Proxima Rodada</a>
       </div>
     </div>
   </section>
 
-  <!-- Sección: Sobre Nosotras -->
+  <!-- Secci�n: Sobre Nosotras -->
   <section id="nosotras" class="section dark-section">
     <div class="container">
-      <h2 class="section-title">Nuestra Filosofía</h2>
+      <h2 class="section-title">Nuestra Filosofia</h2>
       <p class="section-subtitle">
-        Valquirias MC nace de la unión de mujeres apasionadas por la cultura motera, el respeto en ruta y la lealtad.
+        Valquirias nace de la uni�n de mujeres apasionadas por la cultura motera, el respeto en ruta y la lealtad.
       </p>
       <div class="grid-3">
         <div class="card">
@@ -74,33 +74,33 @@
         </div>
         <div class="card">
           <h3>Comunidad</h3>
-          <p>Fomentamos el apoyo mutuo, la formación técnica y eventos benéficos para la comunidad.</p>
+          <p>Fomentamos el apoyo mutuo, la formaci�n tecnica y eventos ben�ficos para la comunidad.</p>
         </div>
         <div class="card">
           <h3>Estilo de Vida</h3>
-          <p>Orgullo de llevar los colores y compartir la pasión por el motor en cada kilómetro.</p>
+          <p>Orgullo de llevar los colores y compartir la pasion por el motor en cada kilometro.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sección: Próxima Ruta -->
+  <!-- Secci�n: Proxima Ruta -->
   <section id="rutas" class="section light-section">
     <div class="container">
-      <h2 class="section-title">Próximo Evento</h2>
+      <h2 class="section-title">Proximo Evento</h2>
       <div class="event-banner">
         <div class="event-info">
           <h3>Ruta Traslasierra 2026</h3>
           <p><strong>Fecha:</strong> 20 de Noviembre, 2026</p>
-          <p><strong>Punto de encuentro:</strong> Sede Central Valquirias - 08:00 AM</p>
-          <p>Recorrido de 350 km con paradas gastronómicas y convivencia motera.</p>
+          <p><strong>Punto de encuentro:</strong> Sede Central Valquirias (Colectivo ROSA) - 08:00 AM</p>
+          <p>Recorrido de 350 km con paradas gastronomicas y convivencia motera.</p>
         </div>
         <a href="#contacto" class="btn btn-primary">Confirmar Asistencia</a>
       </div>
     </div>
   </section>
 
-  <!-- Pie de Página -->
+  <!-- Pie de P�gina -->
   <footer class="footer">
     <div class="container footer-container">
       <p>&copy; 2026 Valquirias Motorcycle Club. Todos los derechos reservados.</p>
@@ -111,7 +111,7 @@
     </div>
   </footer>
 
-  <!-- Script del Menú Desplegable -->
+  <!-- Script del Men� Desplegable -->
   <script src="main.js"></script>
 </body>
 </html>

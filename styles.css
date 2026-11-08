@@ -309,3 +309,32 @@ body {
     border-top: 1px solid #333;
   }
 }
+/* Asegurar que la sección contenedora tenga posición relativa */
+.hero {
+  position: relative; /* Permite posicionar elementos absolutos dentro de ella */
+}
+
+/* Posicionar el logo en la parte superior derecha de la parte central */
+.hero-logo-top-right {
+  position: absolute;
+  top: 25px;       /* Distancia desde el borde superior de la sección */
+  right: 25px;     /* Distancia desde el borde derecho de la sección */
+  width: 33px;    /* Tamaño adecuado para la esquina */
+  height: auto;
+  z-index: 10;     /* Asegura que el logo quede por encima del fondo u overlay */
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.8)); /* Sombra para resaltar */
+  transition: transform 0.3s ease;
+}
+
+.hero-logo-top-right:hover {
+  transform: scale(1.08); /* Efecto de ligero aumento al pasar el cursor */
+}
+
+/* Ajuste responsivo para teléfonos móviles */
+@media (max-width: 768px) {
+  .hero-logo-top-right {
+    top: 15px;
+    right: 15px;
+    width: 20px; /* Se reduce el tamaño en pantallas pequeñas para no tapar el texto */
+  }
+}
