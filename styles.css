@@ -321,7 +321,7 @@ body {
   position: absolute;
   top: 25px;
   left: 25px;
-  height: 65px;    /* Misma altura para ambos */
+  height: 250px;    /* Misma altura para ambos */
   width: auto;
   z-index: 10;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.8));
@@ -333,7 +333,7 @@ body {
   position: absolute;
   top: 25px;
   right: 25px;
-  height: 65px;    /* Misma altura para ambos */
+  height: 250px;    /* Misma altura para ambos */
   width: auto;
   z-index: 10;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.8));
@@ -350,12 +350,12 @@ body {
   .hero-qr-top-left {
     top: 15px;
     left: 15px;
-    height: 40px;
+    height: 20px;
   }
 
   .hero-logo-top-right {
     top: 15px;
     right: 15px;
-    height: 40px;
+    height: 20px;
   }
 }
