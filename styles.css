@@ -350,12 +350,12 @@ body {
   .hero-qr-top-left {
     top: 15px;
     left: 15px;
-    height: 100px;
+    height: 150px;
   }
 
   .hero-logo-top-right {
     top: 15px;
     right: 15px;
-    height: 100px;
+    height: 150px;
   }
 }
